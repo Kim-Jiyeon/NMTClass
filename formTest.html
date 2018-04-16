@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>formTest</title>
+    <style>
+        body{
+            font-size: 10pt;
+            width : 80%;
+            margin: auto;
+        }
+        #login{
+            box-shadow: 3px 2px 5px 2px black;
+            width: 350px;
+            padding: 5px;
+            border: 1px solid ray;
+            margin: 10px 5px 0px 5px;
+            padding: 15px;
+        }
+        h1{
+            color : green;
+        }
+        input{
+            margin : 3px 3px 3px 3px;
+            padding: 5px;
+        }
+        label{
+            width: 150px;
+            font-weight: bold; 
+            float: left;
+            color: darkblue;
+        }
+        section{
+            margin-bottom: 10px;
+            margin-top: 10px;
+            width: 270px;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="login">
+        <form action="" method="POST">
+        <fieldset>
+                <legend><h1>회원가입</h1></legend>
+            <section>
+                <input type="text" size="30" placeholder="아이디" pattern="[a-z\S]{6,}" autofocus required tabindex="100" accesskey="I">
+                <input type="password" size="30" placeholder="비밀번호" pattern="[a-z0-8]{8,}" required accesskey="P">
+                <input type="password" size="30" placeholder="비밀번호 재확인" required>
+            </section>
+            <section>
+                <input type="text" size="30" placeholder="이름" >
+                <label>성별 </label>
+                남자<input type="radio" id="male" >
+                여자<input type="radio" id="female" >
+                <input type="number" size="8" min="1920" max="2018" placeholder="생년">
+                <input type="number" size="8" min="1" max="12" placeholder="월">
+                <input type="number" size="8" min="1" max="31" placeholder="일">
+                <input type="email" size="30" placeholder="비상 연락용 이메일">
+            </section>
+            <section>
+                <input type="reset" value="v 다시입력" onclick="reset()">
+                <input type="submit" value="v 가입하기" onclick="submit()">
+            </section>
+            <section>
+                <label for="cmt">남기고 싶은 말</label>
+                <textarea name="cmt" id="" cols="30" rows="5"></textarea>
+            </section>
+            <section>
+                <label for="path">알게된 경로</label>
+                <select name="path" id="">
+                    <option value="홈페이지">홈페이지</option>
+                    <option value="직원추천">직원추천</option>
+                    <option value="기타">기타</option>
+                </select>
+            </section>
+        </fieldset>
+        </form>
+    </div>
+</body>
+</html>

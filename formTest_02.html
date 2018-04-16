@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        fieldset{
+            width: max-content; 
+        }
+        label{
+            width: 150px;
+            font-weight: bold; 
+            float: left;
+            color: blue;
+        }
+        input{
+            width : 200px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+        <legend><h3>추가 속성 테스트</h3></legend>
+        <label for="">date : </label><input type="date"><br>
+        <label for="">detetime-local : </label><input type="datetime-local"><br>
+        <label for="">month : </label><input type="month"><br>
+        <label for="">time : </label><input type="time"><br>
+        <label for="">week : </label><input type="week"><br>
+        <label for="">color : </label><input type="color"><br>
+        <label for="">email : </label><input type="email"><br>
+        <label for="">tel : </label><input type="tel" placeholder="###-####-####" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br>
+        <label for="">search : </label><input type="search"><br>
+        <label for="">range : </label><input type="range"><br>
+        <label for="">number : </label><input type="number"><br>
+        <label for="">url : </label><input type="url"><br>
+    </fieldset>
+    <fieldset>
+        <h4>신발 사이즈 선택</h4>
+        <select name="size" id="">
+        <optgroup label="female">
+            <option value="225">225mm</option>
+            <option value="230">230mm</option>
+            <option value="235">235mm</option>
+        </optgroup>
+        <optgroup label="male">
+            <option value="255">255mm</option>
+            <option value="260">260mm</option>
+            <option value="265">265mm</option>
+        </optgroup>
+    </select>
+    </fieldset>
+    Downloading ...
+    <progress value="5000" max="10000">
+        <span id="status">50</span>%
+    </progress><br>
+    <meter value="2" min="0" max="10">2 out of 10</meter><br>
+    <meter value="0.6">60%</meter>
+    <fieldset>
+        <input list="browsers">
+
+        <datalist id="browsers">
+            <option value="Internet Explorer"></option>
+            <option value="Firefox"></option>
+            <option value="Chrome"></option>
+            <option value="Opera"></option>
+            <option value="Safari"></option>
+        </datalist>
+    </fieldset>
+    <fieldset>
+        <h1>details 태그</h1>
+        <p>
+            <detailes>
+                <summary>과일 사과 레포트</summary>
+                사과는 장미 종 맬 러스 domestica, 사과 나무의 pomaceous 과일입니다.
+            </detailes>
+        </p>
+    </fieldset>
+</body>
+</html>

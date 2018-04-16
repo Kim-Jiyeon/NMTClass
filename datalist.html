@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>datalist</title>
+    <style>
+    fieldset{
+        width: 500px;
+    }
+    legend{
+        color: black;
+        font-size: 1.2em
+    }
+    label{
+        width : 120px;
+        font-weight: bold;
+        float: left;
+        color: blue;
+        padding: 5px 5px 5px 5px;
+    }
+    </style>
+    <script>
+        function gotoUrl(){
+            var url = "http://" +document.getElementById("url").value;
+            open(url);
+        }
+    </script>
+</head>
+<body>
+    <form name="myform">
+        <fieldset>
+            <legend>이동</legend>
+            <label>Goto</label>http://<input type="text" id="url" name="homepage" list="homepage" autofocus>
+            <datalist id="homepage">
+                <option value="www.google.com"></option>
+                <option value="www.naver.com"></option>
+                <option value="www.facebook.com"></option>
+            </datalist>
+            <input type="submit" value="이동" onclick="gotoUrl()">
+        </fieldset>
+        <fieldset>
+                <h1>details 태그</h1>
+                <p>
+                    <detailes>
+                        <summary>과일 사과 레포트</summary>
+                        사과는 장미 종 맬 러스 domestica, 사과 나무의 pomaceous 과일입니다.
+                    </detailes>
+                </p>
+            </fieldset>
+            <details>
+                <summary>이미지 추가 정보</summary>
+
+            </details>
+    </form>
+    <pre><code>function Panel(element, canClose, closeHandler){
+        this.element = element;
+        this.canClose = canClose;
+        this.closeHandler = function){
+            if (closeHandler) closeHandler()};
+        }
+    </code></pre>
+    <p>컴퓨터를 하던 중 <samp>the system encounterend a problem(#707)</samp>라는 에러메세지가 떴다.</p>
+    <p><var>n</var>의 수만큼 곱하시오</P>
+</body>
+</html>
